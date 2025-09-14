@@ -7,7 +7,8 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import OutboundOutlinedIcon from "@mui/icons-material/OutboundOutlined";
-import { Slide } from "@mui/material";
+import SliderComp from "./SliderComp";
+
 const Dashboard = () => {
   return (
     <>
@@ -258,7 +259,7 @@ const Dashboard = () => {
         What our users say
       </Typography>
 
-      <Stack direction={"row"} sx={{ marginTop: "40px" }}>
+      {/*    <Stack direction={"row"} sx={{ marginTop: "40px" }}>
         //card-1
         <Card
           sx={{
@@ -627,9 +628,12 @@ const Dashboard = () => {
             </Stack>
           </Stack>
         </Card>
-      </Stack>
-
+      </Stack> 
+      
       <img src="./images/dots.png" alt="..." style={{ marginTop: "20px" }} />
+      */}
+
+      <SliderComp />
     </>
   );
 };
